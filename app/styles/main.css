@@ -24,6 +24,23 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+/* Uses a transparent header that draws on top of the layout's background */
+.ryoster-layout-transparent {
+  background: url('../images/common/transparent.jpg') center / cover;
+}
+.ryoster-layout-transparent .mdl-layout__header,
+.ryoster-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+.article-image {
+    width: 100%;
+    height: auto;
+}
+
+
 .mdl-demo .mdl-layout__header-row {
   padding-left: 40px;
 }
